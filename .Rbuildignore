@@ -21,3 +21,6 @@
 ^\.covrignore$
 ^\.github$
 \.*gcov$
+^.*\.Rproj$
+^\.Rproj\.user$
+^testthat.buildkite$
