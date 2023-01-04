@@ -19,5 +19,3 @@ RUN install2.r --error remotes &&  \
         Rscript -e 'install.packages("testthat")'
 
 COPY . /src
-
-RUN R CMD INSTALL /src/testthat.buildkite
