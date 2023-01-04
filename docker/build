@@ -3,9 +3,6 @@ set -ex
 HERE=$(dirname $0)
 . $HERE/common
 
-rm -rf testthat.buildkite
-cp -r ../testthat.buildkite .
-
 docker build --pull \
        --tag $TAG_SHA \
        -f docker/Dockerfile \

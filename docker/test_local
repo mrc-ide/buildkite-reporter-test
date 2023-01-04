@@ -10,7 +10,7 @@ function cleanup {
 trap cleanup EXIT
 
 rm -rf testthat.buildkite
-git clone https://github.com/mrc-ide/testthat.buildkite
+cp -r ../testthat.buildkite .
 
 docker run --rm -d -it --name tests_run $TAG_SHA bash
 

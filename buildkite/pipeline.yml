@@ -6,8 +6,3 @@ steps:
 
   - label: ":docker: Test package installed"
     command: docker/test_package
-
-  - wait
-
-  - label: ":shipit: Push images"
-    command: docker/push
