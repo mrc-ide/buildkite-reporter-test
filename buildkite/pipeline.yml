@@ -5,4 +5,4 @@ steps:
   - wait
 
   - label: ":docker: Test package installed"
-    command: docker/test_package
+    command: docker/test
