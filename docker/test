@@ -17,4 +17,4 @@ docker run --rm -d -it --name tests_run $TAG_SHA bash
 docker cp testthat.buildkite tests_run:/src/testthat.buildkite
 
 docker exec -it tests_run R CMD INSTALL /src/testthat.buildkite
-docker exec -it tests_run test_self
+docker exec -it tests_run sh -c 'test_self; exit $?'
